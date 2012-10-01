@@ -48,10 +48,9 @@ public class Food
         System.out.println("Enter sub-category");
         this.subCategory = sc.nextLine();
     }
-
+    /** Returns string for output to txtfile with "---"" as the separator */
     public String fStr()
     {
-        String eol = System.getProperty("line.separator");
-        return("Food name: " + )
+        return("---" + this.name + "---" + this.price + "---" + this.category + "---" + this.subCategory + System.getProperty("line.separator"));
     }
 }
